@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tutorial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md"> 
+        <!--navbar-expand-md é utilizda para denotar quando a navbar expande para a vertical ou quando o icone hamburger expande para uma navbar na horizontal
+            o MD serve para indicar tabelas de tamanho médio (768 px) -->
+        <a class="navbar-brand" href="#">Logo</a>
+        <!-- navbar-brand é a classe utilizada para o elemento que guardará o logotipo de sua marca no seu site -->
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <!-- navbar-toggler é o botão de ativar/desativar collapse da navbag -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <!-- navbar-nav é para denotar os elementos que ficarão na lista <ul> para aparecer na navbar -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="page-header header container-fluid">
+        <!-- container-fluid é uma classe default para containers responsivos 
+             fluid >> estica para toda a largura da tela-->
+        <div class="overlay"></div>
+        <div class="description">
+            <h1>Bem vindo a nossa página!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.</p>
+            <button class="btn btn-outline-secondary btn-lg">Saiba Mais!</button>
+        </div>
+        
+    </header>
+    <div class="container features">
+        <!-- class="Row" é usado para colunas em um grid do bootstrap -->
+        <div class="row">   
+             <!--col-lg, col-md, col-sm servem para definir os tamanhos que a coluna terá em telas diferentes (celular, tablet e computador)  -->
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Lorem ipsum</h3>
+                <img src="images/column-1.jpeg" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Lorem ipsum</h3>
+                <img src="images/column-2.jpg" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Entre em contato!</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nome" name="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>
